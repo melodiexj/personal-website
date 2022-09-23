@@ -49,10 +49,12 @@
     <div class="gallery-small">
 
       <div v-for="imgInfo in galleryImages" :key="imgInfo['header']" class="gallery-item">
-        <img :src="imgInfo['url']"/>
+        <img :src="imgInfo['url']">
 
-        <h3>{{imgInfo['header']}}</h3>
-        <p>{{imgInfo['description']}}</p>
+        <div>
+          <h3>{{imgInfo['header']}}</h3>
+          <p>{{imgInfo['description']}}</p>
+        </div>
       </div>
 
     </div>
