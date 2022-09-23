@@ -1,31 +1,33 @@
 <script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
+
+
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <h1>ABOUT</h1>
+
+  <section id="about-me-card" class="card-filled">
+    <div id="profile-picture"/>
+
+    <header>
+      <h2>Hi there!</h2>
+    </header>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas placeat dolorum atque, at quidem reiciendis velit alias inventore fuga earum unde eaque ipsa ad. Maxime animi quod optio! Ullam, aperiam?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas placeat dolorum atque, at quidem reiciendis velit alias inventore fuga earum unde eaque ipsa ad. Maxime animi quod optio! Ullam, aperiam?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas placeat dolorum atque, at quidem reiciendis velit alias inventore fuga earum unde eaque ipsa ad. Maxime animi quod optio! Ullam, aperiam?</p>
+  </section>
+
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+#profile-picture {
+  height: 300px;
+  width: 200px;
+  margin-right: 1.5rem;
+  border-radius: 1rem;
+
+  background-color: var(--color-background);
+  float: left;
 }
 </style>
