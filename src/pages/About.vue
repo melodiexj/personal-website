@@ -27,9 +27,7 @@
 </script>
 
 <template>
-  <h1>ABOUT</h1>
-
-  <section id="about-me-card" class="card-filled">
+  <section id="about-overview" class="overview-card">
     <div id="profile-picture"/>
 
     <header>
@@ -41,7 +39,7 @@
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas placeat dolorum atque, at quidem reiciendis velit alias inventore fuga earum unde eaque ipsa ad. Maxime animi quod optio! Ullam, aperiam?</p>
   </section>
 
-  <section id="about-me-gallery">
+  <section id="about-gallery">
     <header>
       <h2>Check out some of my work!</h2>
     </header>

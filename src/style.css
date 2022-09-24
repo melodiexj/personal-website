@@ -7,6 +7,7 @@ body {
   --color-background: hsl(28, 100%, 97%);
   --color-background-opposite: hsl(0, 0%, 14%);
   --color-primary: hsl(111, 100%, 30%);
+  --color-primary-dark: hsl(111, 100%, 20%);
 
   color: var(--color-primary);
   background-color: var(--color-background);
@@ -47,6 +48,14 @@ p {
 
 section > header > h2:first-child {
   margin-block-start: 0;
+}
+
+.overview-card {
+  padding: 1.5rem;
+  border-radius: 0 1.5rem 1.5rem 1.5rem;
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  margin-top: 0!important;
 }
 
 .card-filled, .card-hollowed {
