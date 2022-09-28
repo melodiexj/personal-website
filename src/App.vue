@@ -10,7 +10,11 @@
 </script>
 
 <template>
-  <nav id="page-navigation-bar">
+  <div>
+    <h4 class="website-logo">Melodie Jin</h4>
+  </div>
+
+  <nav class="page-navigation-bar">
     <ul>
       <router-link to="/" :class="getNavTabClass('/', this.$route.path)">About</router-link>
       <router-link to="/gallery/" :class="getNavTabClass('/gallery/', this.$route.path)">Gallery</router-link>
@@ -19,13 +23,22 @@
   </nav>
 
   <router-view/>
+
+  <footer>
+    <div class="horiz-divider"/>
+    <p>This is a footer</p>
+  </footer>
 </template>
 
 <style scoped>
-  #page-navigation-bar {
+  .website-logo {
+    margin-block: 0;
+    padding-inline: 0;
+  }
+  .page-navigation-bar {
     margin: 0;
   }
-  #page-navigation-bar ul {
+  .page-navigation-bar ul {
     margin-block-end: 0;
     padding-inline: 0;
   }
@@ -41,4 +54,16 @@
     background-color: var(--color-primary);
   }
 
+  .horiz-divider {
+    width: 100%;
+    height: 0.1rem;
+    background-color: var(--color-primary);
+    margin: 1rem 0;
+    border-radius: 1.5rem;
+  }
+
+  footer p {
+    /* opacity: 50%; */
+    text-align: center;
+  }
 </style>

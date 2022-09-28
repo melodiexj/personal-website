@@ -28,7 +28,6 @@ body {
 body.dark {
   --color-background: hsl(0, 0%, 14%);
   --color-primary: hsl(111, 66%, 77%);
-
 }
 
 #app {
@@ -38,12 +37,16 @@ body.dark {
 
 #app > * {
   grid-column: 2 / -2;
-  margin: 1.5rem 0;
+  /* margin: 1.5rem 0; */
 }
 
 p {
   margin-block: 0;
   margin-inline: 0;
+}
+
+section {
+  margin: 2rem 0;
 }
 
 section > header > h2:first-child {
