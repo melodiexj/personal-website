@@ -28,7 +28,7 @@
 
 <template>
   <section id="about-overview" class="overview-card">
-    <div id="profile-picture"/>
+    <div class="profile-picture"/>
 
     <header>
       <h2>Hi there!</h2>
@@ -61,7 +61,7 @@
 </template>
 
 <style scoped>
-#profile-picture {
+.profile-picture {
   height: 300px;
   width: 200px;
   margin-right: 1.5rem;
