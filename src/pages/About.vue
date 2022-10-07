@@ -1,8 +1,19 @@
-<script setup>
+<script>
   import { fetchData } from "../utils.js";
 
   // TODO: later, get this data from external database
-  // const gallery
+
+  export default {
+    data() {
+      return {
+        imgData: [],
+      };
+    },
+    created() {
+      fetchData('src/data.json', 'gallery')
+        .then(data => this.imgData = data);
+    },
+  };
 </script>
 
 <template>
@@ -23,16 +34,15 @@
       <h2>Check out some of my work!</h2>
     </header>
 
-    <div class="gallery-small">
-
-      <div v-for="imgInfo in fetchData('src/data.json', 'gallery')" :key="imgInfo['header']" class="gallery-item">
+    <div class="gallery-small" v-if="imgData">
+      <div v-for="imgInfo in imgData" :key="imgInfo.id" class="gallery-item">
         <img :src="imgInfo['url']">
 
         <div>
           <h3>{{imgInfo['header']}}</h3>
           <p>{{imgInfo['description']}}</p>
         </div>
-      </div>
+    </div>
 
     </div>
   </section>
