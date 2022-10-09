@@ -1,19 +1,21 @@
 <script>
   import { fetchData } from "../utils.js";
+  import GalleryItemSmall from '../components/GalleryItemSmall.vue';
 
   // TODO: later, get this data from external database
 
   export default {
+    components: { GalleryItemSmall },
     data() {
       return {
-        imgData: [],
+          imgData: [],
       };
     },
     created() {
-      fetchData('src/data.json', 'gallery')
-        .then(data => this.imgData = data);
+      fetchData("src/data.json", "gallery")
+      .then(data => this.imgData = data);
     },
-  };
+};
 </script>
 
 <template>
@@ -35,14 +37,9 @@
     </header>
 
     <div class="gallery-small" v-if="imgData">
-      <div v-for="imgInfo in imgData" :key="imgInfo.id" class="gallery-item">
-        <img :src="imgInfo['url']">
-
-        <div>
-          <h3>{{imgInfo['header']}}</h3>
-          <p>{{imgInfo['description']}}</p>
-        </div>
-    </div>
+      <GalleryItemSmall
+        v-for="imgInfo in imgData" :key="imgInfo.id" :data="imgInfo"
+      />
 
     </div>
   </section>

@@ -1,7 +1,6 @@
 <script setup>
   const getNavTabClass = (route, actualRoute) => {
     if (route === actualRoute) {
-      console.log(route)
       return 'navigation-bar-tab active';
     }
     return 'navigation-bar-tab';

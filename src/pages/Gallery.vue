@@ -1,17 +1,19 @@
 <script>
-  import { fetchData } from "../utils";
+import { fetchData } from "../utils";
+import GalleryItemLarge from "../components/GalleryItemLarge.vue";
 
-  export default {
-    data() {
-      return {
-        imgData: [],
-      };
-    },
-    created() {
-      fetchData('src/data.json', 'gallery')
-        .then(data => this.imgData = data);
-    },
-  };
+export default {
+  components: { GalleryItemLarge },
+  data() {
+    return {
+      imgData: [],
+    };
+  },
+  created() {
+    fetchData("src/data.json", "gallery")
+    .then(data => this.imgData = data);
+  },
+};
 </script>
 
 <template>
@@ -23,14 +25,9 @@
   </section>
 
   <section class="gallery-large" v-if="imgData">
-    <div v-for="imgInfo in imgData" :key="imgInfo.id" class="gallery-item">
-      <img :src="imgInfo['url']">
-
-      <div>
-        <h3>{{imgInfo['header']}}</h3>
-        <p>{{imgInfo['description']}}</p>
-      </div>
-    </div>
+    <GalleryItemLarge
+      v-for="imgInfo in imgData" :key="imgInfo.id" :data="imgInfo"
+    />
 
   </section>
 
