@@ -1,5 +1,5 @@
 <script>
-  import { fetchData } from "../utils.js";
+  import { fetchData } from "../utils.ts";
   import GalleryItemSmall from '../components/GalleryItemSmall.vue';
 
   // TODO: later, get this data from external database

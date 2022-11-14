@@ -4,13 +4,13 @@ import './style.css'
 import './gallery.css'
 import App from './App.vue'
 import About from './pages/About.vue'
-import Gallery from './pages/Gallery.vue'
-import Hobbies from './pages/Hobbies.vue'
+// import Gallery from './pages/Gallery.vue'
+// import Hobbies from './pages/Hobbies.vue'
 
 const routes = [
   { path: '/', component: About },
-  { path: '/gallery/', component: Gallery },
-  { path: '/hobbies/', component: Hobbies },
+//   { path: '/gallery/', component: Gallery },
+//   { path: '/hobbies/', component: Hobbies },
   // { path: '*', component: About },
 ]
 
