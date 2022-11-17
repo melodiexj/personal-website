@@ -1,26 +1,30 @@
-import { createApp } from 'vue'
-import { createRouter, createWebHistory } from 'vue-router'
-import './style.css'
-import './gallery.css'
-import App from './App.vue'
-import About from './pages/About.vue'
-import Gallery from './pages/Gallery.vue'
-import Hobbies from './pages/Hobbies.vue'
+import { createApp } from 'vue';
+import { createRouter, createWebHistory } from 'vue-router';
+import './style.css';
+import './gallery.css';
+import App from './App.vue';
+import Home from './pages/Home.vue';
+import Gallery from './pages/Gallery.vue';
+import Interests from './pages/Interests.vue';
+import About from './pages/About.vue';
+import Contact from './pages/Contact.vue';
+import Error from './pages/Error.vue';
 
 const routes = [
-  { path: '/', component: About },
-  { path: '/gallery/', component: Gallery },
-  { path: '/hobbies/', component: Hobbies },
-  // { path: '*', component: About },
-]
-
+  { path: '/', component: Home },
+  { path: '/gallery', component: Gallery },
+  { path: '/interests', component: Interests },
+  { path: '/about', component: About },
+  { path: '/contact', component: Contact },
+  { path: '/:pathMatch(.*)*', component: Error },
+];
 
 const router = createRouter({
   history: createWebHistory(),
   routes,
-})
+});
 
-const app = createApp(App)
-app.use(router)
+const app = createApp(App);
+app.use(router);
 
-app.mount('#app')
+app.mount('#app');

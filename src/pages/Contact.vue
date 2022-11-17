@@ -3,5 +3,5 @@
 </script>
 
 <template>
-  this is the gallery page
+  this is the contact page
 </template>
