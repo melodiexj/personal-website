@@ -2,8 +2,7 @@
   box-sizing: border-box;
 }
 
-body {
-  /* --color-background: #242424; */
+/* body {
   --color-background: hsl(28, 100%, 97%);
   --color-background-opposite: hsl(0, 0%, 14%);
   --color-primary: hsl(111, 100%, 30%);
@@ -37,7 +36,6 @@ body.dark {
 
 #app > * {
   grid-column: 2 / -2;
-  /* margin: 1.5rem 0; */
 }
 
 p {
@@ -69,4 +67,4 @@ section > header > h2:first-child {
 .card-filled {
   background-color: var(--color-primary);
   color: var(--color-background)
-}
+} */
