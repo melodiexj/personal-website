@@ -5,9 +5,13 @@
 body {
   --color1: white;
   --color2: black;
+  /* --color3: aquamarine; */
+  /* --color4: teal; */
+  --color3: aqua;
 
   --color-background: var(--color1);
   --color-primary: var(--color2);
+  --color-secondary: var(--color3);
 
   --margin-body: 4rem;
 
@@ -31,29 +35,45 @@ body {
 body.dark {
   --color-background: var(--color2);
   --color-primary: var(--color1);
+  --color-secondary: var(--color4);
 }
 
 header {
   background: var(--color-primary);
+  color: var(--color-background);
+  padding: 1.5rem 0 0.5rem 0;
 }
 
 .navigation-bar {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 2rem;
 }
 
-.navigation-bar > * {
+/* .navigation-bar > * {
+} */
+
+.navigation-bar .link {
   color: var(--color-background);
 }
 
+.navigation-bar .link:hover {
+  color: var(--color-secondary);
+}
+
+.content-container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 section {
-  margin: 0 var(--margin-body) 10rem var(--margin-body);
+  margin-bottom: var(--margin-body);
   display: grid;
 }
 
 section.inverted-colors {
-  margin-left: calc(-1 * var(--margin-body));
-  margin-right: calc(-1 * var(--margin-body));
   padding: calc(var(--margin-body) / 2) 0;
 
   --color-background: var(--color2);
@@ -67,12 +87,6 @@ section.inverted-colors {
   --color-primary: var(--color1);
   background: var(--color-background);
   color: var(--color-primary); */
-}
-
-section.inverted-colors > * {
-  /* TODO: better solution */
-  margin-left: calc(2 * var(--margin-body));
-  margin-right: calc(2 * var(--margin-body));
 }
 
 .button-lg, .button-xl {
@@ -116,6 +130,53 @@ section.inverted-colors > * {
   margin: auto;
 }
 
-.my-8 {
-  margin: 8rem auto;
+.my-4 {
+  margin: 4rem auto;
 }
+
+/* screen-width-dependent displays
+  size =[xs|sm|md|lg|xl]
+
+  - *-visible: after width breakpoint, visible
+  - *-invisible: after width breakpoint, invisible
+*/
+
+.xs-visible,
+.sm-visible,
+.md-visible,
+.lg-visible,
+.xl-visible {
+  display: none;
+}
+
+/* xs: 320px - 480 px */
+.xs-visible {
+  display: contents;
+}
+.xs-invisible {
+  display: none;
+}
+
+/* sm: 481px - 768px */
+@media (min-width: 481px) {
+  .sm-visible {
+    display: contents;
+  }
+  .sm-invisible {
+    display: none;
+  }
+}
+
+/* md: 769px - 1024px */
+@media (min-width: 769px) {
+  .md-visible {
+    display: contents;
+  }
+  .md-invisible {
+    display: none;
+  }
+}
+
+/* lg: 1025px - 1200px */
+
+/* xl: 1201+px */
