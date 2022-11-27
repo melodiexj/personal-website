@@ -3,14 +3,20 @@
 </script>
 
 <template>
-<section id="overview">
-  <h1>WELCOME</h1>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum eveniet ut quam voluptate molestias! Deleniti, error. Dolor atque voluptate accusantium vitae saepe quia autem perspiciatis? Soluta praesentium ab officia natus? Sit, aspernatur iure non totam necessitatibus cum! Consequuntur at laboriosam, alias officiis, enim tenetur earum doloremque totam eius quibusdam expedita ex rerum dicta impedit aspernatur nisi esse quo, omnis maiores velit? Quos nisi, placeat ea recusandae deleniti eveniet inventore minus.</p>
+<section id="overview" class="mx-auto w-4/5 mb-16 mt-4">
+  <h1 class="text-4xl font-semibold my-8">
+    WELCOME
+  </h1>
+  <p>
+    Hey there! My name is Melodie and I am a fourth year undergraduate student interested in software and web development to create tools that empower people
+  </p>
 </section>
 
-<section id="section1-work" class="grid">
-  <h2>1. Check out some of my work</h2>
-  <div class="carousel horizontal-center">
+<section id="section1-work" class="mx-auto w-4/5 mb-16 mt-4 grid">
+  <h2 class="text-xl font-semibold">
+    1. Check out some of my work
+  </h2>
+  <div class="carousel justify-self-center">
     <div>
       [TODO: place carousel here]
     </div>
@@ -22,15 +28,21 @@
 
 </section>
 
-<section id="section2-about" class="inverted-colors">
-  <h2>2. Learn more about me</h2>
-  <router-link to="/about" class="horizontal-center button-xl my-8">
-    to "About Me"
-  </router-link>
+<section id="section2-about" class="bg-gray-900 text-white py-1 mb-16 mt-4">
+  <div class="mx-auto w-4/5 mb-16 mt-4 grid">
+    <h2 class="text-xl font-semibold">
+      2. Learn more about me
+    </h2>
+    <router-link to="/about" class="justify-self-center button-xl my-4">
+      to "About Me"
+    </router-link>
+  </div>
 </section>
 
-<section id="section3-other">
-  <h2>or 3. See the other things that I do for fun</h2>
+<section id="section3-other" class="mx-auto w-4/5 mb-16 mt-4 grid">
+  <h2 class="text-xl font-semibold">
+    3. See the other things that I do for fun
+  </h2>
   <div class="display-bar-left">
     [TODO: place left display bar here]
   </div>
