@@ -5,7 +5,7 @@ import App from './App.vue';
 import Home from './pages/Home.vue';
 import Experiences from './pages/Experiences.vue';
 import Blog from './pages/Blog.vue';
-import Interests from './pages/Interests.vue';
+import Hobbies from './pages/Hobbies.vue';
 // import About from './pages/About.vue';
 // import Contact from './pages/Contact.vue';
 import Error from './pages/Error.vue';
@@ -14,7 +14,7 @@ const routes = [
   { path: '/', component: Home },
   { path: '/experiences', component: Experiences },
   { path: '/blog', component: Blog },
-  { path: '/interests', component: Interests },
+  { path: '/hobbies', component: Hobbies },
   // { path: '/about', component: About },
   // { path: '/contact', component: Contact },
   { path: '/:pathMatch(.*)*', component: Error },

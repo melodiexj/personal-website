@@ -37,7 +37,7 @@
   </h2>
   <div class="">
     <div>
-      <p>
+      <p class="mb-4">
         This website is still early in development and thus a little empty at the moment.
       </p>
       <p>
@@ -48,6 +48,9 @@
         <li class="list-disc my-1">Vite: for build the source code (and better developer experience)</li>
         <li class="list-disc my-1">Tailwind for CSS utility classes and components</li>
       </ul>
+      <a href="https://github.com/melodiexj/personal-website" class="underline">
+        See the full source code for this website on GitHub
+      </a>
     </div>
   </div>
 </section>
