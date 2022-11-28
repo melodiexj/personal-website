@@ -6,27 +6,18 @@ This project used a scaffolded Vue project with Vite.
 Design
 - typography
 - colors
-- revamp design -> more stylistic/thematic elements
-- other ways to display Work
-  - gallery
-  - carousel
-  - most recent
-  - most "popular" = clicks from visitors / self-declared importance
 - navigation bar
+  - logo
 
 Function
-- load imgData into Gallery page
-  - load imgData into small gallery on About page
-- contact me
+- transport data (image data, blogs?) to external database
+- contact me?
 - dark mode
+- blog tags + search (by tag, keywords, content)
 
 Content
-- footer
-- Hobbies
-- Pfp
-- Work/imgData
-- Hobbies
-- About - Experiences/Timeline
+- Experiences/Timeline
+- Blog
 
 <!-- # Vue 3 + TypeScript + Vite
 
