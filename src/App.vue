@@ -22,9 +22,9 @@
   </main>
 
   <footer class="w-full h-16 mx-auto py-2 text-center bg-gray-900 text-white flex flex-wrap place-content-center gap-x-2">
-    <a href="/" class="underline underline-offset-4">LinkedIn</a>
+    <a href="https://www.linkedin.com/in/melodiejin/" class="hover:underline hover:underline-offset-4">LinkedIn</a>
     |
-    <a href="/" class="underline underline-offset-4">GitHub</a>
+    <a href="https://github.com/melodiexj" class="hover:underline hover:underline-offset-4">GitHub</a>
     |
     <span>melodiej@umich.edu</span>
   </footer>
