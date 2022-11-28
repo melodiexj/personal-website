@@ -3,54 +3,53 @@
 </script>
 
 <template>
-<section id="overview" class="mx-auto w-4/5 mb-16 mt-4">
+<section id="overview" class="mx-auto max-w-4xl w-4/5 mb-16 mt-4">
+  <img src="src/assets/blue-pfp.jpeg" alt="picture of me, Melodie" class="w-1/3 float-right ml-6 mb-6"/>
   <h1 class="text-4xl font-semibold my-8">
-    WELCOME
+    Hey, there! I'm Melodie
   </h1>
-  <p>
-    Hey there! My name is Melodie and I am a fourth year undergraduate student interested in software and web development to create tools that empower people
+  <p class="mb-4">
+    ... and I am a fourth year undergraduate student at the University of
+    Michigan in Ann Arbor, USA majoring in Computer Science. I want to
+    become a software/web developer that creates tools and spaces that are
+    accessible to a diverse user base and empowering them to achieve their
+    goals.
+  </p>
+  <p class="mb-4">
+    At Umich, I have taken a range of classes, such as
+    <span class="italic">Data Structures & Algorithms</span>,
+    <span class="italic">Introduction to Machine Learning</span>,
+    <span class="italic">Web Systems</span>,
+    <span class="italic">Database Management Systems</span>, and
+    <span class="italic">Software Engineering</span>.
+    And I have had the opportunity to apply and further develop my skills through
+    internships, including one at an early startup and another in consulting services.
+  </p>
+  <p class="mb-4">
+    When I am not working or studying, I enjoy playing video games (recently
+    Genshin Impact and Arknights), as well as making and eating sweets.
   </p>
 </section>
 
-<section id="section1-work" class="mx-auto w-4/5 mb-16 mt-4 grid">
-  <h2 class="text-xl font-semibold">
-    1. Check out some of my work
+<section id="section1-work" class="mx-auto max-w-4xl w-4/5 mt-4 grid">
+  <h2 class="text-2xl font-semibold mb-4">
+    About this site
   </h2>
-  <div class="carousel justify-self-center">
+  <div class="">
     <div>
-      [TODO: place carousel here]
+      <p>
+        This website is still early in development and thus a little empty at the moment.
+      </p>
+      <p>
+        For those that may be curious, I created these web pages using:
+      </p>
+      <ul class="ml-8 list-inside">
+        <li class="list-disc my-1">Vue: as the Javascript framework for making a declarative front end</li>
+        <li class="list-disc my-1">Vite: for build the source code (and better developer experience)</li>
+        <li class="list-disc my-1">Tailwind for CSS utility classes and components</li>
+      </ul>
     </div>
-
-    <router-link to="/gallery" class="button-lg">
-      see more in the gallery
-    </router-link>
-  </div>
-
-</section>
-
-<section id="section2-about" class="bg-gray-900 text-white py-1 mb-16 mt-4">
-  <div class="mx-auto w-4/5 mb-16 mt-4 grid">
-    <h2 class="text-xl font-semibold">
-      2. Learn more about me
-    </h2>
-    <router-link to="/about" class="justify-self-center button-xl my-4">
-      to "About Me"
-    </router-link>
   </div>
 </section>
 
-<section id="section3-other" class="mx-auto w-4/5 mb-16 mt-4 grid">
-  <h2 class="text-xl font-semibold">
-    3. See the other things that I do for fun
-  </h2>
-  <div class="display-bar-left">
-    [TODO: place left display bar here]
-  </div>
-  <div class="display-bar-right">
-    [TODO: place right display bar here]
-  </div>
-  <div class="display-bar-left">
-    [TODO: place left display bar here]
-  </div>
-</section>
 </template>
