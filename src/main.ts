@@ -1,21 +1,22 @@
 import { createApp } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router';
 import './style.css';
-import './gallery.css';
 import App from './App.vue';
 import Home from './pages/Home.vue';
-import Gallery from './pages/Gallery.vue';
+import Experiences from './pages/Experiences.vue';
+import Blog from './pages/Blog.vue';
 import Interests from './pages/Interests.vue';
-import About from './pages/About.vue';
-import Contact from './pages/Contact.vue';
+// import About from './pages/About.vue';
+// import Contact from './pages/Contact.vue';
 import Error from './pages/Error.vue';
 
 const routes = [
   { path: '/', component: Home },
-  { path: '/gallery', component: Gallery },
+  { path: '/experiences', component: Experiences },
+  { path: '/blog', component: Blog },
   { path: '/interests', component: Interests },
-  { path: '/about', component: About },
-  { path: '/contact', component: Contact },
+  // { path: '/about', component: About },
+  // { path: '/contact', component: Contact },
   { path: '/:pathMatch(.*)*', component: Error },
 ];
 

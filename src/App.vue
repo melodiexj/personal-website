@@ -10,10 +10,11 @@
     </div>
     <nav class="hidden md:flex mx-auto flex-wrap gap-x-8">
       <router-link class="hover:underline hover:underline-offset-4" to="/">HOME</router-link>
-      <router-link class="hover:underline hover:underline-offset-4" to="/gallery">GALLERY</router-link>
+      <router-link class="hover:underline hover:underline-offset-4" to="/experiences">EXPERIENCES</router-link>
+      <router-link class="hover:underline hover:underline-offset-4" to="/blog">BLOG</router-link>
       <router-link class="hover:underline hover:underline-offset-4" to="/interests">INTERESTS</router-link>
-      <router-link class="hover:underline hover:underline-offset-4" to="/about">ABOUT</router-link>
-      <router-link class="hover:underline hover:underline-offset-4" to="/contact">CONTACT ME</router-link>
+      <!-- <router-link class="hover:underline hover:underline-offset-4" to="/about">ABOUT</router-link>
+      <router-link class="hover:underline hover:underline-offset-4" to="/contact">CONTACT ME</router-link> -->
     </nav>
   </header>
 
