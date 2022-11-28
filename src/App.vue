@@ -8,7 +8,7 @@
     methods: {
       getNavBarLinkClassName (linkContent: string) {
         if (this.$route.path === `\/${linkContent.toLowerCase()}`) {
-          return "underline underline-offset-4";
+          return "underline underline-offset-4 cursor-default";
         } else {
           return "hover:underline hover:underline-offset-4";
         }
