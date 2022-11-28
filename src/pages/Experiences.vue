@@ -3,9 +3,14 @@
 </script>
 
 <template>
-  <div class="mx-auto w-4/5">
+  <section class="mx-auto w-4/5">
     <h1 class="text-4xl font-semibold my-8">
-      THIS IS THE EXPERIENCES PAGE
+      Work Experience
     </h1>
-  </div>
+    <a href="src/assets/Jin_Melodie_Resume_2023.pdf" download
+      class="text-blue-500 hover:underline hover:underline-offset-4"
+    >
+      Click here to download my resume.
+    </a>
+  </section>
 </template>
