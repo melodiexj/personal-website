@@ -1,68 +1,47 @@
-<script setup>
-  const getNavTabClass = (route, actualRoute) => {
-    if (route === actualRoute) {
-      return 'navigation-bar-tab active';
-    }
-    return 'navigation-bar-tab';
-  }
+<script lang="ts">
+  import { defineAsyncComponent } from "vue";
 
+  export default {
+    components: {
+      MenuIcon: defineAsyncComponent(() => import("vue-material-design-icons/Menu.vue")),
+    },
+    methods: {
+      getNavBarLinkClassName (linkContent: string) {
+        if (this.$route.path === `\/${linkContent.toLowerCase()}`) {
+          return "underline underline-offset-4 cursor-default";
+        } else {
+          return "hover:underline hover:underline-offset-4";
+        }
+      }
+    }
+  }
 </script>
 
 <template>
-  <div>
-    <h4 class="website-logo">Melodie Jin</h4>
-  </div>
+  <header class="sticky top-0 bg-gray-900 text-white flex justify-center pt-8 pb-2">
+    <!-- <a id="skip-nav" href="#main-content">Skip to Content</a> -->
+    <div class="contents md:hidden">
+      <MenuIcon/>
+    </div>
+    <nav class="hidden md:flex mx-auto flex-wrap gap-x-8">
+      <router-link :class="getNavBarLinkClassName('')" to="/">HOME</router-link>
+      <router-link :class="getNavBarLinkClassName('EXPERIENCES')" to="/experiences">EXPERIENCES</router-link>
+      <router-link :class="getNavBarLinkClassName('BLOG')" to="/blog">BLOG</router-link>
+      <router-link :class="getNavBarLinkClassName('HOBBIES')" to="/hobbies">HOBBIES</router-link>
+      <!-- <router-link class="hover:underline hover:underline-offset-4" to="/about">ABOUT</router-link>
+      <router-link class="hover:underline hover:underline-offset-4" to="/contact">CONTACT ME</router-link> -->
+    </nav>
+  </header>
 
-  <nav class="page-navigation-bar">
-    <ul>
-      <router-link to="/" :class="getNavTabClass('/', this.$route.path)">About</router-link>
-      <router-link to="/gallery/" :class="getNavTabClass('/gallery/', this.$route.path)">Gallery</router-link>
-      <router-link to="/hobbies/" :class="getNavTabClass('/hobbies/', this.$route.path)">Hobbies</router-link>
-    </ul>
-  </nav>
+  <main class="min-h-screen -mb-16">
+    <router-view/>
+  </main>
 
-  <router-view/>
-
-  <footer>
-    <div class="horiz-divider"/>
-    <p>This is a footer</p>
+  <footer class="w-full h-16 mx-auto py-2 text-center bg-gray-900 text-white flex flex-wrap place-content-center gap-x-2">
+    <a href="https://www.linkedin.com/in/melodiejin/" class="hover:underline hover:underline-offset-4">LinkedIn</a>
+    |
+    <a href="https://github.com/melodiexj" class="hover:underline hover:underline-offset-4">GitHub</a>
+    |
+    <span>melodiej@umich.edu</span>
   </footer>
 </template>
-
-<style scoped>
-  .website-logo {
-    margin-block: 0;
-    padding-inline: 0;
-  }
-  .page-navigation-bar {
-    margin: 0;
-  }
-  .page-navigation-bar ul {
-    margin-block-end: 0;
-    padding-inline: 0;
-  }
-  .navigation-bar-tab {
-    background-color: var(--color-primary-dark);
-    color: var(--color-background);
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem 0.5rem 0 0;
-    margin-right: 0.25rem;
-    text-decoration: none;
-  }
-  .navigation-bar-tab.active {
-    background-color: var(--color-primary);
-  }
-
-  .horiz-divider {
-    width: 100%;
-    height: 0.1rem;
-    background-color: var(--color-primary);
-    margin: 1rem 0;
-    border-radius: 1.5rem;
-  }
-
-  footer p {
-    /* opacity: 50%; */
-    text-align: center;
-  }
-</style>
