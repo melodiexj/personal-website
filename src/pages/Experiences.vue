@@ -10,7 +10,7 @@ export default({
     <h1 class="text-4xl font-semibold my-8">
       Work Experience
     </h1>
-    <a href="src/assets/Jin_Melodie_Resume_2023.pdf" download
+    <a href="/src/assets/Jin_Melodie_Resume_2023.pdf" download
       class="text-blue-500 hover:underline hover:underline-offset-4"
     >
       Click here to download my resume.

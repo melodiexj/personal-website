@@ -7,7 +7,7 @@ export default({
 
 <template>
 <section id="overview" class="mx-auto max-w-4xl w-4/5 mb-16 mt-4">
-  <img src="src/assets/blue-pfp.jpeg" alt="picture of me, Melodie" class="w-1/3 float-right ml-6 mb-6"/>
+  <img src="/src/assets/blue-pfp.jpeg" alt="picture of me, Melodie" class="w-1/3 float-right ml-6 mb-6"/>
   <h1 class="text-4xl font-semibold my-8">
     Hey, there! I'm Melodie
   </h1>
