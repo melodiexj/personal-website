@@ -31,7 +31,7 @@ jobs:
         with:
           node-version: 16
           cache: 'npm'
-      - run: npm run install
+      - run: npm install
       - run: npm run build
       - name: push to another repo
         uses: cpina/github-action-push-to-another-repository@main
