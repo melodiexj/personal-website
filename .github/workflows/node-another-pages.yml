@@ -36,8 +36,7 @@ jobs:
       - name: push to another repo
         uses: cpina/github-action-push-to-another-repository@main
         env:
-          SSH_DEPLOY_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          # API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+          SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
         with:
           source-directory: 'dist/*'
           destination-github-username: 'melodiexj'
