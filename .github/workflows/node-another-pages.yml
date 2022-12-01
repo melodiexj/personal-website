@@ -38,7 +38,7 @@ jobs:
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source_file: 'dist/*'
+          source_file: 'dist'
           destination_repo: 'melodiexj/melodiexj.github.io'
           user_email: 'melodie.x.jin@gmail.com'
           user_name: 'melodiexj'
