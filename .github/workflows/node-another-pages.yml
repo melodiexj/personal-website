@@ -39,8 +39,7 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
           source_file: 'dist/*'
-          destination_repo: 'dmnemec/release-test'
-          destination_folder: '/'
+          destination_repo: 'melodiexj/melodiexj.github.io'
           user_email: 'melodie.x.jin@gmail.com'
           user_name: 'melodiexj'
           commit_message: 'pushing new production build'
