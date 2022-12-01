@@ -33,16 +33,17 @@ jobs:
           cache: 'npm'
       - run: npm install
       - run: npm run build
-      - name: push to another repo
-        uses: cpina/github-action-push-to-another-repository@main
+      - name: copy files and push to another repo
+        uses: dmnemec/copy_file_to_another_repo_action@main
         env:
-          SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source-directory: 'dist/*'
-          destination-github-username: 'melodiexj'
-          destination-repository-name: 'melodiexj.github.io'
-          user-email: melodiej@umich.edu
-          target-branch: main
+          source_file: 'dist/*'
+          destination_repo: 'dmnemec/release-test'
+          destination_folder: '/'
+          user_email: 'melodie.x.jin@gmail.com'
+          user_name: 'melodiexj'
+          commit_message: 'pushing new production build'
 
   # Deployment job
   # deploy:
